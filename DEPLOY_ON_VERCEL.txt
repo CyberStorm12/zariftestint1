@@ -1,0 +1,18 @@
+Vercel settings:
+- Framework Preset: Vite
+- Root Directory: project root (the folder that contains package.json)
+- Build Command: npm run build
+- Output Directory: dist/public
+- Install Command: leave empty, or use npm install
+
+Important environment variables for admin/API features:
+- GITHUB_OWNER
+- GITHUB_REPO
+- GITHUB_TOKEN
+- GITHUB_BRANCH (optional, default main)
+- ADMIN_USERNAME
+- ADMIN_PASSWORD
+- JWT_SECRET
+
+If you only want the public website and not the admin/content API, the frontend can still build,
+but the API routes need the env vars above to work correctly at runtime.
